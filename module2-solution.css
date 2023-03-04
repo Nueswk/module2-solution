@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+h1 {
+    color: solid black;
+    text-align: center;
+}
+p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+section {
+    clear: right;
+    margin: 10px;
+
+}
+.box1 {
+    background-color: #f1f1f1;
+    height: 175px;
+    margin: 20px;
+    position: relative;
+    padding: 0%;
+    border: 1px solid black;
+}
+.box2 {
+    background-color: #f1f1f1;
+    height: 175px;
+    margin: 20px;
+    position: relative;
+    padding: 0%;
+    border: 1px solid black;
+}
+.box3 {
+    background-color: #f1f1f1;
+    height: 175px;
+    margin: 20px;
+    padding: 0%;
+    position: relative;
+    border: 1px solid black;
+}
+.inner-box {
+    background-color: pink;
+    border: 1px solid black;
+    float: right;
+    width: 100px;
+    padding: 0%;
+    height: 25px;
+}
+.second-box {
+    background-color: blue;
+    border: 1px solid black;
+    float: right;
+    width: 100px;
+    padding: 0%;
+    height: 25px;
+}
+.third-box {
+    background-color: red;
+    border: 1px solid black;
+    float: right;
+    width: 100px;
+    padding: 0%;
+    height: 25px;
+}
+@media (min-width: 992px) {
+    .box1, .box2, .box3{
+        float: left;
+}
+    .box1 {
+        width: 29%;
+    }
+    .box2 {
+        width: 29%;
+    }
+    .box3 {
+        width: 29%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .box1, .box2, .box3{
+        float: left;
+        border: 2px solid black
+    }
+    .box1 {
+        width: 43.5%;
+    }
+    .box2 {
+        width: 43.5%;
+    }
+    .box3 {
+        width: 91%;
+    }
+}
+@media (max-width: 767px) and (min-width:0) {
+    .box1, .box2, .box3{
+        float: left;
+        border: 2px solid black;
+    }.box1 {
+        width: 90%;
+    }
+    .box2 {
+        width: 90%;
+    }
+    .box3 {
+        width: 90%;
+    }
+}
